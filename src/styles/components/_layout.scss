@@ -1,0 +1,103 @@
+// =============================================================================
+// Document
+// =============================================================================
+
+html {
+  overflow: hidden;
+  height: 100%;
+  font-size: var(--basis);
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  background-color: var(--brand);
+  color: var(--slate);
+  line-height: 1.5;
+
+  @include for-mobile {
+    text-align: center;
+  }
+}
+
+
+
+// =============================================================================
+// Layout Elements
+// =============================================================================
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 84px;
+  background-color: var(--white);
+}
+.header--sm ~ .main { padding-top: 12px; }
+
+.section {
+  width: 100%;
+  &.section--full {
+    min-height: calc(100vh - 84px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header--sm ~ .main .section--full { min-height: calc(100vh - 12px); }
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+
+  &.tp--md { padding-top: var(--space-md); }
+  &.tp--sm { padding-top: var(--space-sm); }
+
+  &.bp--md { padding-bottom: var(--space-md); }
+  &.bp--sm { padding-bottom: var(--space-sm); }
+
+  &.lg { max-width: 1200px; }
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+
+  &.content--center { text-align: center; }
+  &.content--sm { max-width: 640px; }
+}
+
+
+// =============================================================================
+// ALERTS
+// =============================================================================
+
+.alert-success {
+    margin: 12px auto 10px auto;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: #D4EDDA;
+ }
+
+.alert-danger {
+    margin: 12px auto 10px auto;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    background-color: #F8D7DA;
+ }
+
+
+

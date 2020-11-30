@@ -1,7 +1,7 @@
 {
   "name": "mercury-studio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/styled": "^10.0.27",
     "@testing-library/jest-dom": "^4.2.4",

@@ -49,7 +49,7 @@ const Register = ({ register, loading }) => {
              <section className="section section--full">
                <div className="container tp--sm bp--sm">
                  <div className="content content--sm content--center">
-            <h1 className='large text-primary'>Event Registration Form</h1> 
+            <h1 className='large text-primary'>Mercury Studio Event Registration Form</h1> 
             <Alert />
             <form className='form' data-testid='form-element' onSubmit={submitForm}>
                 <div className="input__section">
